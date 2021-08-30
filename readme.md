@@ -6,7 +6,7 @@ Welcome to Python!
 
  Day | Algos | Morning | Afternoon
  --- | --- | --- | ---
-Mon |  |  | 
+Mon | [Recording](https://youtu.be/rpqXKK7Qz40) | [Stack Orientation Recroding](https://youtu.be/souolbml0zM) | 
 Tue |  |  | 
 Wed |  |  | 
 Thu |  |  | 
