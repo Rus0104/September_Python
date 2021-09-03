@@ -7,7 +7,7 @@ def hello_world():
 
 @app.route('/success')
 def success():
-    return "Success"
+    return render_template('index.html', name = "Jin", num = 15)
 
 @app.route('/student/<name>/<other_name>')
 def student_page(name, other_name):
@@ -16,6 +16,10 @@ def student_page(name, other_name):
 @app.route('/index/<name>/<int:num>')
 def index(name, num):
     return render_template('index.html', name = name, num = num)
+
+@app.route('/example')
+def example():
+    return "example"
 
 if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
     app.run(debug=True)    # Run the app in debug mode.
