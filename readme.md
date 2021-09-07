@@ -12,3 +12,12 @@ Wed |  [Recording](https://youtu.be/-_KnD7MXgcY) &#124; [Code](https://github.co
 Thu | [Recording](https://youtu.be/E8deut2e660) &#124; [Code](https://github.com/KangKyungJin/September_Python/blob/main/Algos/W1/D4.js) | [Recording: Flask Intro](https://youtu.be/plXG9vOEPog) &#124; [Lecture Code](https://github.com/KangKyungJin/September_Python/tree/main/Lectures/W1/D4%20-%20Flask%20Intro) | [Recording: Static Files in Flask](https://youtu.be/P19aJcF4tl8)
 Fri | [Recording](https://youtu.be/7MOVtSxz7tQ) &#124; [Code](https://github.com/KangKyungJin/September_Python/blob/main/Algos/W1/D5.js) | [Recording: Form Post, Redirect, Session](https://youtu.be/QsL-qIBCpNM) &#124; [Lecture Code](https://github.com/KangKyungJin/September_Python/tree/main/Lectures/W1/D5%20-%20Forms%2C%20Redirect%2C%20Session) | 
 
+## Week 2
+
+ Day | Algos | Morning | Afternoon
+ --- | --- | --- | ---
+Mon | [Recording](https://youtu.be/eEyXSE8epE0) &#124; [Code](https://github.com/KangKyungJin/September_Python/blob/main/Algos/W2/D6.js) | [Recording: Intro to MySQL](https://youtu.be/yee0b2zGI5I) | 
+Tue | | | |
+Wed | | | |
+Thu | | | |
+Fri | | | |
