@@ -17,7 +17,7 @@ Fri | [Recording](https://youtu.be/7MOVtSxz7tQ) &#124; [Code](https://github.com
  Day | Algos | Morning | Afternoon
  --- | --- | --- | ---
 Mon | [Recording](https://youtu.be/eEyXSE8epE0) &#124; [Code](https://github.com/KangKyungJin/September_Python/blob/main/Algos/W2/D6.js) | [Recording: Intro to MySQL](https://youtu.be/yee0b2zGI5I) | [Recording: Ninja Gold Demo](https://youtu.be/wxwgLVmCzCA) &#124; [Code: Ninja Gold Demo](https://github.com/KangKyungJin/September_Python/tree/main/Lectures/W2/D6)
-Tue | | | |
+Tue | [Recording](https://youtu.be/OqdrDEjtXL4) &#124; [Code](https://github.com/KangKyungJin/September_Python/blob/main/Algos/W2/D7.js) | [Recording: MySQL Queries](https://youtu.be/g11aowJYTg8) |
 Wed | | | |
 Thu | | | |
 Fri | | | |
