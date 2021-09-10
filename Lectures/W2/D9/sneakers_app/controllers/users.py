@@ -15,3 +15,8 @@ def add_user():
     }
     User.create_user(data)
     return redirect('/users')
+
+@app.route('/user/<id>')
+def this_user(id):
+    user = User.get_one({'id':id})
+    return render_template('one_user.html', user = user)

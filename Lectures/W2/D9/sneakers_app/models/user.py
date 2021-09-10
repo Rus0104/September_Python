@@ -1,4 +1,5 @@
 from sneakers_app.config.mysqlconnection import connectToMySQL
+from sneakers_app.models import sneaker
 
 class User:
     def __init__(self, data):
@@ -7,6 +8,7 @@ class User:
         self.last_name = data['last_name']
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
+        self.sneakers = []
     
     @classmethod
     def create_user(cls, data):
@@ -25,3 +27,25 @@ class User:
             users.append(cls(row))
         
         return users
+    
+    @classmethod
+    def get_one(cls, data):
+        query = "SELECT * FROM users LEFT JOIN sneakers ON users.id = sneakers.user_id WHERE users.id = %(id)s;"
+        results = connectToMySQL('sneakers').query_db(query, data)
+
+        user = cls(results[0])
+
+        for row in results:
+            data = {
+                'id' : row['sneakers.id'],
+                'brand' : row['brand'],
+                'size' : row['size'],
+                'type' : row['type'],
+                'price' : row['price'],
+                'created_at' : row['sneakers.created_at'],
+                'updated_at' : row['sneakers.updated_at'],
+                'user_id' : row['user_id']
+            }
+            user.sneakers.append(sneaker.Sneaker(data))
+        
+        return user

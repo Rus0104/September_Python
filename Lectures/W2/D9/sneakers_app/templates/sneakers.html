@@ -27,7 +27,7 @@
                             <td>{{ sneaker.size }}</td>
                             <td>{{ sneaker.type }}</td>
                             <td>${{ sneaker.price }}</td>
-                            <td>{{ sneaker.user.first_name }} {{ sneaker.user.last_name }}</td>
+                            <td><a href="/user/{{sneaker.user.id}}">{{ sneaker.user.first_name }} {{ sneaker.user.last_name }}</a></td>
                         </tr>
                         {% endfor %}
                     </tbody>
