@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x' crossorigin='anonymous'>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    
+        <div class="row">
+            <div class="col">
+                <form action="/add_user" method="post">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" name="first_name" class="form form-control">
+                    {% for message in get_flashed_messages(category_filter = ['first_name']) %}
+                        <p class="alert alert-danger">{{ message }}</p>
+                    {% endfor %}
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" name="last_name" class="form form-control">
+                    {% for message in get_flashed_messages(category_filter = ['last_name']) %}
+                        <p class="alert alert-danger">{{ message }}</p>
+                    {% endfor %}
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" class="form form-control">
+                    {% for message in get_flashed_messages(category_filter = ['email']) %}
+                        <p class="alert alert-danger">{{ message }}</p>
+                    {% endfor %}
+                    <label for="password">Password:</label>
+                    <input type="text" name="password" class="form form-control">
+                    {% for message in get_flashed_messages(category_filter = ['password']) %}
+                        <p class="alert alert-danger">{{ message }}</p>
+                    {% endfor %}
+                    <br>
+                    <input type="submit" value="Add User" class="btn btn-primary">
+                </form>
+            </div>
+            <div class="col">
+                {% for user in all_users %}
+                    <h5>{{ user.first_name }} {{user.last_name}}</h5>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
